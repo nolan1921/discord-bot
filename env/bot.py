@@ -25,6 +25,11 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
     
+    if message.content.startswith('$loans'):
+        if len(message.content.split())>1:
+            collection = message.content.split()[1]
+            await message.channel.send("Loans for " + collection)
+            #print(message.content.split())
     #if message.content.startswith('How are you today?'):
     #    await message.channel.send('Average at best') hello 
     
@@ -34,4 +39,4 @@ async def on_message(message):
     if message.content.startswith('Ethereum loan'):
        await message.channel.send('The best avaiable loan for Etherem: ' )#inputbestloan
 
-client.run('MTExODM3MTEzMTQ2OTA5MDgzNg.GP7zba.aIvAlexTIydSIFaiA0rMneF8zBpaYsLbV-yq9k')
+client.run('MTExODM3MTEzMTQ2OTA5MDgzNg.Gd2GV4.SeChrqtSmFcxOVT34fmK6l85GeYZ0Ne3_MHVrw')
