@@ -18,7 +18,7 @@ async def on_ready():
 
 async def on_message(message):
     print(message)
-    
+
     if message.author == client.user:
         return
 
@@ -26,7 +26,7 @@ async def on_message(message):
         await message.channel.send('Hello!')
     
     #if message.content.startswith('How are you today?'):
-    #    await message.channel.send('Average at best')
+    #    await message.channel.send('Average at best') hello 
     
     #if message.content.startswith('roll'):
     #    await message.channel.send(str(random.randint(1,6)))
